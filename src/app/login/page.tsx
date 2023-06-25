@@ -4,9 +4,6 @@ import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } f
 import React, { use } from 'react';
 import { auth } from "../lib/FirebaseConfig";
 
-import { NextPage } from 'next'
-import Router from 'next/router'
-import { redirect } from "next/dist/server/api-utils";
 
 export default function SignIn() {
     // useStateでユーザーが入力したメールアドレスとパスワードをemailとpasswordに格納する
@@ -66,6 +63,10 @@ export default function SignIn() {
                     >
                         ログイン
                     </a>
+                    <br></br>
+                    <a href="/forgotpass">パスワードを忘れたらここクリック</a>
+                    <br></br>
+                    <a href="/register">新規登録</a>
                 </form>
             </div>
 

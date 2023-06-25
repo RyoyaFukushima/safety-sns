@@ -3,9 +3,6 @@
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth"
 import React, { use } from 'react';
 import { auth } from "../lib/FirebaseConfig";
-import { NextPage } from 'next'
-import Router from 'next/router'
-import { redirect } from "next/dist/server/api-utils";
 
 export default function Register() {
     // useStateでユーザーが入力したメールアドレスとパスワードをemailとpasswordに格納する
