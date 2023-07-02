@@ -33,3 +33,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+# firebase firestore
+firestore-db-secretkey.json
+
+src/app/lib/FirebaseConfig.js

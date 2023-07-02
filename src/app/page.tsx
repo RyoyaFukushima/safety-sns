@@ -3,8 +3,9 @@
 import { auth } from "./lib/FirebaseConfig";
 import { User, onAuthStateChanged } from "firebase/auth";
 import React from 'react';
-import SignOut from "./component/SignOut";
-import DelUser from "./component/DeleteUser";
+import SignOut from "./api/SignOut";
+import DelUser from "./api/DeleteUser";
+import Link from "next/link";
 
 
 export default function Home() {
@@ -39,8 +40,8 @@ export default function Home() {
         <h1>マイページ</h1>
 
         <p>Log inしろ</p>
-        <a href="/login">login</a><br></br>
-        <a href="/register">新規登録</a>
+        <Link href="/login">login</Link><br></br>
+        <Link href="/register">新規登録</Link>
       </>
     );
   }

@@ -13,3 +13,5 @@ const SignOut = () => {
 }
 
 export default SignOut;
+ 
+// firebaseのAPIを使ってるのでログアウト、退会はAPI外の機能としている
