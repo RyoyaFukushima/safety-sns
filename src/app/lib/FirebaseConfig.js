@@ -14,8 +14,8 @@ import { getStorage } from "firebase/storage";
 
 const firebaseApp = initializeApp({
     // ENVか直打ちするけど管理は慎重にする
-    apiKey: "x",
-    authDomain: "x",
+    apiKey: "xx",
+    authDomain: "xx",
     projectId: "x",
     storageBucket: "x",
     messagingSenderId: "x",
