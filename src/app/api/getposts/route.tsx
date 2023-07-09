@@ -1,5 +1,5 @@
 import { db } from "@/app/lib/FirebaseConfig";
-import { CollectionReference, collection, doc, getDocs } from "firebase/firestore";
+import { CollectionReference, collection, getDocs } from "firebase/firestore";
 import { NextApiResponse } from "next";
 import { NextResponse } from "next/server";
 
@@ -11,10 +11,15 @@ export async function GET(
     res: NextApiResponse
 ) {
     const COLLECTION_NAME = 'post';
-    
+
     //　初期化する
     const documentRef = collection(db, COLLECTION_NAME);
     const querySnap = (await getDocs(documentRef));
+
+
+    //データ取得用配列
+    const arrList = [];
+
     // https://pontaro.net/891/#toc7
     // map() メソッドは、与えられた関数を配列のすべての要素に対して呼び出し、その結果からなる新しい配列を生成します。
     // 配列のそれぞれに処理をしたいときforループよりモダンに書きたい時はこうしよう
@@ -24,7 +29,6 @@ export async function GET(
     }));
     return NextResponse.json(result);
 }
-
 /*
     const querySnap = (await getDocs(documentRef));
     // https://pontaro.net/891/#toc7
