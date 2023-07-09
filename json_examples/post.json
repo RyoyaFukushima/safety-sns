@@ -1,0 +1,36 @@
+[
+	{
+		"postid": "Qkgcu1L8iwYTWGG6z0By",
+		"postdata": {}
+	},
+	{
+		"postid": "iUVl9Y8WvyTjncGLE9qT",
+		"postdata": {
+			"posted_uid": "hogeuid",
+			"likes": 0,
+			"created_at": "2023/7/2 20:39:14",
+			"violence_rate": 0,
+			"context": "HogeFooBar from body"
+		}
+	},
+	{
+		"postid": "s71apaxnztgHNTx7w9Uz",
+		"postdata": {
+			"posted_uid": "hogeuid",
+			"context": "HogeFooBar from body",
+			"likes": 0,
+			"created_at": "2023/7/2 20:39:16",
+			"violence_rate": 0
+		}
+	},
+	{
+		"postid": "ydqcPPNbOZ173TsVXSP8",
+		"postdata": {
+			"created_at": "2023/7/2 20:39:15",
+			"likes": 0,
+			"posted_uid": "hogeuid",
+			"context": "HogeFooBar from body",
+			"violence_rate": 0
+		}
+	}
+]
